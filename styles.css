@@ -52,13 +52,11 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 body{
-  display: flex;
-  flex-direction: column;
-  background-image: url(/images/Captura\ de\ pantalla\ 2023-03-24\ 214832.png);
+  /* display: flex;
+  flex-direction: column; */
+  background-image: url(images/fondo.avif);
   background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment:fixed;
-  background-color: black;
+
   color: white;
 }
 
@@ -70,32 +68,35 @@ header{
   display: flex;
   justify-content:space-around;
   align-items:center;
-  background-color: rgb(18, 18, 18);
-  height: 15vh;
+  background-color: rgba(18, 18, 18, 0.58);
+  height: 18vh;
   color: white;
 }
 
 
 /* logo */
 .logo img{
-  width: 100px;
-  height: 100px;
+  width: 135px;
 }
+
 
 
 
 /* buscador */
 .buscador{
   border-radius: 40px;
-  background-color:rgb(45, 45, 169);
+  background-color:#F5811E;
   padding: 10px;
-
+  
+}
+::placeholder{
+  color: black;
 }
 .buscar{
   border: none;
   background: none;
   outline: none;
-  color: white;
+  color: black;
   font-size: 20px;
   transition: .3s;
   width: 0px;
@@ -103,11 +104,13 @@ header{
 .buscador:hover > .buscar{
   width: 300px;
 }
+
+
 .boton{
   width: 40px;
   height: 40px;
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 20px;
 }
 
@@ -140,7 +143,9 @@ ul li:hover .menu-vertical{
   padding: 0 20px;
 }
 .menu a{
-  color: white;
+  background: linear-gradient(yellow,red);
+  -webkit-background-clip: text;
+  color: transparent;  
   text-decoration: none;
 }
 
