@@ -1,3 +1,5 @@
+/* ICONO-AJUSTES */
+
 /*BUSCADOR*/
 
 @charset "UTF-8";
@@ -118,11 +120,26 @@ header{
 .menu{
   font-weight: bold;
 }
-.menu2{
+.ajustes1{
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+}
+.ajustes1 label{
+  cursor: pointer;
+}
+.logo-ajustes{
   font-weight: bold;
 }
-.menu2 a {
+.logo-ajustes li{
+  list-style: none;
+}
+.logo-ajustes a {
   text-decoration: none;
+  background: linear-gradient(yellow,red);
+  -webkit-background-clip: text;
+  color: transparent; 
+  /* cursor: none; */
 }
 .menu-vertical{
   position: absolute;
